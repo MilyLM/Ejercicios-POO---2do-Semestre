@@ -1,0 +1,12 @@
+import os
+
+ruta= "test.txt" # Ruta del archivo
+size= os.path.getsize(ruta) # Obtener el tamaño del archivo en bytes
+
+kb= size / 1024 # Convertir el tamaño a kilobytes
+mb= size / (1024 * 1024) # Convertir el tamaño a megabytes
+
+print(f"El tamaño del archivo es: {kb:.2f} KB") # Imprimir el tamaño
+print(f"El tamaño del archivo es: {mb} MB") # Imprimir el tamaño
+
+
